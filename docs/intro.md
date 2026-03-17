@@ -1,5 +1,10 @@
-# Olympus Cluster Documentation
+---
+id: intro
+title: Olympus Cluster Documentation
+slug: /
+---
 
+# Olympus Cluster Documentation
 Welcome to the Olympus cluster documentation.
 
 This site provides an overview of the system architecture, compute nodes, networking, storage, and operational procedures.
