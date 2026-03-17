@@ -2,27 +2,86 @@
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
+---
+
+## Prerequisites
+
+Before working with this site, make sure you have the following installed:
+
+- **Node.js** (version 18 or newer)  
+  Check with:
+  ```bash
+  node -v
+````
+
+* **Yarn** (package manager)
+  Install globally if needed:
+
+  ```bash
+  npm install -g yarn
+  ```
+
+---
+
 ## Installation
 
+Install all project dependencies:
+
 ```bash
-yarn
+yarn install
 ```
 
+This command reads the `package.json` file and installs everything needed to build and run the site locally.
+
+---
+
 ## Local Development
+
+Start the development server:
 
 ```bash
 yarn start
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+This will:
+
+* Launch a local server (default: [http://localhost:3000](http://localhost:3000))
+* Automatically open the site in your browser
+* Enable **live reload**, so changes appear instantly
+
+---
+
+## Editing the Site
+
+* Documentation lives in the `docs/` directory
+* Edit or add `.md` (Markdown) files
+* Save changes
+
+The browser will automatically refresh to reflect updates — no restart required.
+
+---
+
+## Stopping the Server
+
+When you're done editing, stop the development server:
+
+```bash
+Ctrl + C
+```
+
+---
 
 ## Build
+
+To generate a production-ready version of the site:
 
 ```bash
 yarn build
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+This creates a static site in the `build/` directory, which can be deployed to any static hosting service.
+
+---
 
 ## Deployment
 
@@ -38,4 +97,36 @@ Not using SSH:
 GIT_USER=<Your GitHub username> yarn deploy
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+If you are using GitHub Pages for hosting, this command builds the website and pushes it to the `gh-pages` branch.
+
+---
+
+## Typical Workflow
+
+```bash
+git clone <repo>
+cd Olympus_Docs
+yarn install
+yarn start   # develop locally
+```
+
+After making changes:
+
+```bash
+Ctrl + C
+git add .
+git commit -m "Update documentation"
+git push
+```
+
+---
+
+## Notes
+
+* Do **not** commit `node_modules/` or `build/`
+* Always use `yarn install` after pulling new changes
+* Use `yarn build` only when preparing for deployment
+
+```
+```
+
