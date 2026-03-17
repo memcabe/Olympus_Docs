@@ -12,7 +12,7 @@ Before working with this site, make sure you have the following installed:
   Check with:
   ```bash
   node -v
-````
+```
 
 * **Yarn** (package manager)
   Install globally if needed:
