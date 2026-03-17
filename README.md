@@ -122,7 +122,7 @@ git push
 ---
 
 ## Notes
-
+.gitignore was automatically generated with Docusaurus. Using `git add .` should work with all new changes. If you would like to be extra sure that the build is clean, follow the directions below.
 * Do **not** commit `node_modules/` or `build/`
 * Always use `yarn install` after pulling new changes
 * Use `yarn build` only when preparing for deployment
