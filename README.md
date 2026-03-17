@@ -126,7 +126,3 @@ git push
 * Do **not** commit `node_modules/` or `build/`
 * Always use `yarn install` after pulling new changes
 * Use `yarn build` only when preparing for deployment
-
-```
-```
-
